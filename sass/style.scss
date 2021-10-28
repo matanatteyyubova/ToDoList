@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.conatiner{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo_form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 32px;
+    border-radius: 8px;
+    background-color: aquamarine;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 46px;
+    word-spacing: 10px;
+}
+.todo_div{
+    display: flex;
+    margin-top: 20px;
+}
+.todo_input{
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 18px;
+}
+.todo_btn{
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 18px;
+    background-color: rgb(161, 179, 196);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.todo_btn:hover{
+    background-color: rgb(72, 121, 163);
+}
+.todo_container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: aquamarine;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom:  1px solid grey;
+}
+.todo:last-child{
+    border: none;
+}
+.todo_left{
+    display: flex;
+    align-items: center;
+}
+.todo_text{
+    padding-left: 8px;
+}
+.todo_edit{
+    margin-left: 8px;
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    width: 50px;
+    height:30px;
+    color: white;
+
+}
+.todo_delete{
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    width: 50px;
+    height:30px;
+    color: white;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+}
+.todo_cb:checked~.todo_text{
+    text-decoration: line-through;
+    color: grey;
+}
